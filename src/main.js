@@ -7,6 +7,10 @@ import Vue from 'vue'
 import App from './App'
 // declare router from routing app
 import router from './router'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+Vue.use(BootstrapVue);
 //  instatinate the vue instance
 new Vue({
 //  define the selector for the root component

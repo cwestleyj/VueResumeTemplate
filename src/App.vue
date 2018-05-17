@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/tweenMaxDemo">Tween</router-link>
-    </nav>
+    <b-nav tabs>
+      <b-nav-item to="/">Home</b-nav-item>
+      <b-nav-item to="/about">About</b-nav-item>
+      <b-nav-item to="/tweenMaxDemo">Tween</b-nav-item>
+    </b-nav>
     <transition name="router-anim" mode="out-in">
       <keep-alive>
         <router-view></router-view>
@@ -19,21 +19,20 @@ export default {
 </script>
 <!-- styling for the component -->
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: green;
-  margin-top: 60px;
-}
-
 html, body {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  background: yellow;
-  color: white;
+background: url("https://www.toptal.com/designers/subtlepatterns/patterns/slash_it.png");
+  color: #3edada;
+
 }
 
+a, a:visited {
+  color: #3edada;
+  text-decoration: none;
+}
+
+#app {
+}
 a, a:visited {
   color: #3edada;
   text-decoration: none;
@@ -61,16 +60,6 @@ a, a:visited {
   100% {
     transform: translateX(100%);
   }
-}
-html, body {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  background: #222;
-  color: white;
-}
-
-a, a:visited {
-  color: #3edada;
-  text-decoration: none;
 }
 
 </style>
