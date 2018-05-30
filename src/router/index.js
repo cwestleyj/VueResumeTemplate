@@ -5,10 +5,11 @@ import Vue from 'vue'
 // import the router
 import Router from 'vue-router'
 // import helloworld example component
-import HelloWorld from '@/components/HelloWorld'
+import resume from '@/components/resume'
 // import about component
 import about from '@/components/about'
-import tweenMaxDemo from '@/components/tweenMaxDemo'
+// import projects from '@/components/projects'
+
 
 // tell vue to use router view
 Vue.use(Router)
@@ -21,19 +22,19 @@ export default new Router({
       // declare relative path here
       path: '/',
       // declare name
-      name: 'HelloWorld',
+      name: 'resume',
       // find the component
-      component: HelloWorld
+      component: resume
     },
     {
       path: '/about',
       name: 'About',
       component: about
-    },
-    {
-      path: '/tweenMaxDemo',
-      name: 'tweebMaxDemo',
-      component: tweenMaxDemo
     }
+    // {
+    //   path: '/projects',
+    //   name: 'projects',
+    //   component: projects
+    // }
   ]
 })
