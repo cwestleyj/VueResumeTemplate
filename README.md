@@ -1,8 +1,8 @@
-# clintonjwebapp
+# Vue resume template
 
-> A vue web portfolio project
+> Dynamic routing vue application w/ sliding transition states
 
-## Build Setup
+ ## Build Setup
 
 ``` bash
 # install dependencies
